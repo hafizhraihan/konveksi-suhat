@@ -24,6 +24,17 @@ body:hover > #trailer {
   opacity: 1;
 }
 
+
+@media (max-width: 500px) {
+  #trailer {
+    opacity: 0;
+  }
+
+  body:hover > #trailer {
+    opacity: 0;
+  }
+}
+
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
