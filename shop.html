@@ -30,13 +30,6 @@
 </head>
 
 <body>
-  <div id="bg">
-
-  </div>
-
-  <div id="trailer">
-
-  </div>
 
   <!-- Navigation Bar starts -->
   <header class="header_section">
