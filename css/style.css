@@ -544,7 +544,167 @@ a:focus {
   border-radius: 5px;
 }
 
-/* end info section */
+/* end shop section */
+
+/* start order section */
+
+.order_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.order_section .btn-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #cb1e1e;
+  border: 1px solid #cb1e1e;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.order_section .btn-box a:hover {
+  background-color: #cb1e1e;
+  color: #ffffff;
+  border: 1px solid #cb1e1e;
+  border-radius: 5px;
+}
+
+.card {
+  max-width: 100vw;
+  flex-direction: row;
+  padding: 0px 80px 0px 80px;
+}
+
+.card img {
+  max-width: 160px;
+  margin: auto;
+  padding: 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section {
+  max-width: 60%;
+}
+
+.cta-section {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cta-section .btn {
+  padding: 0.3em 0.5em;
+}
+
+.card .card-body h5 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    font-size: 0.7em;
+    padding: 20px;
+  }
+
+  .card img {
+    max-width: 100px;
+  }
+
+  .card button {
+    font-size: 12px;
+  }
+
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999999;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #fff;
+  max-width: 30em;
+  /* height: 220px; */
+  z-index: 9999999990;
+  padding: 0.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.popup .text-section {
+  font-size: 12px;
+  align-content: start;
+  width: 25em;
+}
+
+.popup .title-section {
+  text-align: center;
+}
+
+.popup h5 {
+  font-weight: bold;
+}
+
+.popup-img {
+  text-align: center;
+}
+
+.popup-img img {
+  max-width: 75%;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #a0a0a0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transition: all .4s ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* end order section */
 
 /* footer section*/
 .footer_section {
