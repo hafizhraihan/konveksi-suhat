@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
   <title>
-    Konveksi Suhat | My Orders
+    Konveksi Suhat | Products
   </title>
 
   <!-- slider stylesheet -->
@@ -30,13 +30,6 @@
 </head>
 
 <body>
-  <div id="bg">
-
-  </div>
-
-  <div id="trailer">
-
-  </div>
 
   <!-- Navigation Bar starts -->
   <header class="header_section">
@@ -62,41 +55,89 @@
     </nav>
   </header>
 
-  <div class="table-responsive" id="table_order">
-    <table class="table table-stripped">
-        <thead>
-            <tr>
-                <th class="col-1">No</th>
-                <th>Product</th>
-                <th>Description</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Detail</th>
-                <th>Cancel</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td><img src="images/varsity.png" style="max-width: 100px;"></td>
-                <td>Lorem ipsum</td>
-                <td>12</td>
-                <td>Rp260.000</td>
-                <td><button class="btn btn-sm btn-warning">Click here</button></td>
-                <td><button class="btn btn-sm btn-secondary">X</button></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td><img src="images/varsity.png" style="max-width: 100px;"></td>
-              <td>Lorem ipsum</td>
-              <td>24</td>
-              <td>Rp520.000</td>
-              <td><button class="btn btn-sm btn-warning">Click here</button></td>
-              <td><button class="btn btn-sm btn-secondary">X</button></td>
-          </tr>
-        </tbody>
-    </table>
-</div>    
+  <div class="heading_container heading_center" style="padding: 20px;">
+    <h2>
+      My Orders
+    </h2>
+  </div>
+
+  <!-- table starts -->
+  <div class="card"  style="border-bottom: none; border-left: none; border-right: none;">
+    <img src="images/varsity.png" class="card-img-top">
+    <div class="card-body">
+      <div class="text-section">
+        <h5 class="card-title">Varsity</h5>
+        <p class="card-text">Sleeve: Kulit <br>
+          Patch: Embroidery <br>
+          Color: Red <br>
+          Interior: Cotton Fleece</p>
+      </div>
+      <div class="cta-section">
+        <div style="text-align: right;">
+          x12 <br>
+          Rp260.000 <br>
+          <b>Rp2.260.000</b>
+        </div>
+        <button class="btn btn-sm btn-warning" onclick="togglePopup()">Details</button>
+        <button class="btn btn-sm btn-danger">Cancel</button></td>
+                
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" style="border-bottom: none; border-left: none; border-right: none;">
+    <img src="images/varsity.png" class="card-img-top">
+    <div class="card-body">
+      <div class="text-section">
+        <h5 class="card-title">Varsity</h5>
+        <p class="card-text">Sleeve: Kulit <br>
+          Patch: Embroidery <br>
+          Color: Red <br>
+          Interior: Cotton Fleece</p>
+      </div>
+      <div class="cta-section">
+        <div style="text-align: right;">
+          x24 <br>
+          Rp260.000 <br>
+          <b>Rp4.520.000</b>
+        </div>
+        <button class="btn btn-sm btn-warning" onclick="togglePopup()">Details</button>
+        <button class="btn btn-sm btn-danger">Cancel</button></td>
+                
+      </div>
+    </div>
+  </div>
+
+  <!-- pop up -->
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      <div class="popup-img">
+        <img src="images/varsity.png" class="card-img-top">
+      </div>
+      <div class="title-section">
+        <h5 class="card-title">Varsity</h5>
+      </div>
+      <div class="card-body">
+        <div class="text-section">
+          <p>Sleeve: Kulit <br>
+            Patch: Embroidery <br>
+            Color: Red <br>
+            Interior: Cotton Fleece
+          </p>
+          <div>
+            x24 <br>
+            Rp260.000 <br>
+            <b>Rp4.520.000</b>
+          </div>         
+        </div>
+      </div>
+      <button class="btn btn-sm btn-danger">Cancel Order</button>
+    </div>
+  </div>
+  
+    
 
   <script src="index.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
