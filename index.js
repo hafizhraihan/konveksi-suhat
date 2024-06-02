@@ -16,3 +16,7 @@ const animateTrailer = (e, interacting) =>{
 window.onmousemove = e => {
     animateTrailer(e);
 }
+
+function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
