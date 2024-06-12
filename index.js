@@ -73,18 +73,28 @@ function displayCartItems() {
             const cartItemDiv = document.createElement('div');
             cartItemDiv.classList.add('cart-item');
             cartItemDiv.innerHTML = `
-                <div class="cart-item-image">
-                    <img src="images/${product.name}.png" alt="${product.name}">
+                <div class="row">
+                    <div class="cart-item-image" style="margin-right: 4rem;">
+                        <img src="images/${product.name}.png" alt="${product.name}">
+                    </div>
+                    <div>
+                        <h3><b>${product.name}</b></h3>
+                        <p>Price: Rp${product.price}</p>
+                        <div class="" style="justify-content: space-around; gap: 2rem; align-items: center;">
+                            <p>Quantity: 
+                                <div class="row" style="justify-content: space-around; gap: 2rem; align-items: center;">
+                                <button class="quantity-btn" data-id="${item.id}" data-action="decrease">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="quantity-btn" data-id="${item.id}" data-action="increase">+</button>
+                                </div>
+                            </p>
+                        </div>
+                        <p>Total: <b>Rp${itemTotal}</b></p>        
+                        <button class="remove-btn" data-id="${item.id}">Remove</button>
+                    </div>
                 </div>
-                <h3><b>${product.name}</b></h3>
-                <p>Price: Rp${product.price}</p>
-                <p>Quantity: 
-                    <button class="quantity-btn" data-id="${item.id}" data-action="decrease">-</button>
-                    <span>${item.quantity}</span>
-                    <button class="quantity-btn" data-id="${item.id}" data-action="increase">+</button>
-                </p>
-                <p>Total: <b>Rp${itemTotal}</b></p>
-                <button class="remove-btn" data-id="${item.id}">Remove</button>
+                
+                
             `;
             cartItemsDiv.appendChild(cartItemDiv);
         }
